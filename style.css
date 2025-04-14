@@ -66,7 +66,7 @@ header nav{
 header nav a{
     color: #ffffff;
     background-color: var(--color2);
-    border: 3px solid var(--color2);
+    border: 2px solid var(--color2);
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -78,7 +78,7 @@ header nav a{
 }
 
 header nav a:hover{
-    border: 3px solid var(--color2);
+    border: 2px solid var(--color2);
     background-color: #ffffff;
     color: var(--color2);
 }
@@ -106,7 +106,7 @@ h3{
 }
 
 section{
-    width:100%;
+    width: 100%;
     align-items: center;
     justify-content: center;  
     padding: 30px 4% 30px 4%;
@@ -152,7 +152,7 @@ img{
 #apresentacao img{
    width: 100%;
    max-width: 1600px;
-   padding: 20px 0px 10px 0px;
+   margin: 20px 0px 10px 0px;
 }
 
 #conceito{
@@ -167,18 +167,13 @@ img{
     align-items: center;
 }
 
-#conceito article div{
+#conceito article div, #exemplos article div{
     width: 50%;
     padding: 10px;
 }
 
 #conceito article div p{
     text-align: center;
-}
-
-#conceito_img1{
-    width: 100%;
-    max-width: 600px;
 }
 
 .formula{
@@ -193,12 +188,7 @@ img{
     align-items: center;
 }
 
-#exemplos article div{
-    width: 50%;
-    padding: 10px;
-}
-
-.exemplos_img{
+.exemplos_img, #conclusao article div img, #conceito_img1{
     width: 100%;
     max-width: 600px;
     border-radius: 5%;
@@ -237,15 +227,10 @@ img{
     max-width: 600px;
     margin: auto;
     display: block;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
-#pratique article div p{
-    text-align: justify;
-    padding-top: 10px;
-}
-
-#solucao_exercicio1, #solucao_exercicio2, #solucao_exercicio3{
+#pratique article div p, #solucao_exercicio1, #solucao_exercicio2, #solucao_exercicio3{
     text-align: justify;
     padding-top: 10px;
 }
@@ -254,6 +239,7 @@ img{
     width: 100%;
     max-width: 700px;
 }
+
 #conclusao article{
     display: flex;
     flex-wrap: wrap;
@@ -264,12 +250,6 @@ img{
 #conclusao article div{
     width: 50%;
     padding: 10px;
-}
-
-#conclusao article div img{
-    width: 100%;
-    max-width: 600px;
-    border-radius: 5%;
 }
 
 button{
@@ -294,7 +274,7 @@ button:hover{
 
 footer{
     text-align: center;
-    padding: 5px 0px;
+    padding: 8px 0px;
     background-color: var(--color1);
     font-weight: 600;
 }
@@ -307,8 +287,8 @@ footer p{
     position: fixed;
     bottom: 15px;
     right: 15px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
     z-index: 9999;
@@ -382,52 +362,31 @@ footer p{
         align-items: center; 
     }
 
-    div{
+    div, #apresentacao{
         width: 100%;
         height: 100%;
         text-align: center;
         padding: 0 2%;
     }
 
-    img{
-        border-radius: 5%;
-        width: 80%;
-        margin: 15px 0 15px 0;
+    #apresentacao h2{
+        padding: 10px 0px 10px 0px;
+    }    
+
+    #conceito{
+        padding-bottom: 0px;
     }
 
     #conceito article{
         padding-top: 0px;
     }
-    
-    #conceito article div image{
-        width: 80%;
-    }
 
-    #exemplos article div img{
-        width: 80%;
-    }
-
-    #conceito article div, #exemplos article div, #conclusao article div {
-        width: 100%;
-    }
-
-
-    #pratique article div img {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    img{
-        width: 100%;
-    }
-
-    #exemplos article div img{
+    #conceito article div, #exemplos article div, #conclusao article div{
         width: 100%;
     }
 
     #pratique img{
-        width: 95%;
+        padding: 0px 8px 0px 8px;
     }
 }
 
